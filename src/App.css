@@ -9,9 +9,9 @@
   background-color: #082f92;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the app horizontally */
-  padding: 16px; /* Add some padding for small screens */
-  box-sizing: border-box; /* Include padding in the element's total width and height */
+  justify-content: center; 
+  padding: 16px; 
+  box-sizing: border-box; 
 }
 
 .weather-app {
@@ -19,17 +19,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%; /* Use percentage for responsiveness */
-  max-width: 350px; /* Limit the maximum width */
+  width: 90%; 
+  max-width: 350px; 
   min-height: 440px;
   background-color: rgb(13, 3, 79);
   text-align: center;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 16px; /* Reduce padding for smaller screens */
+  padding: 16px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+.weather-icon {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  margin-bottom: 50px; 
+}
+.app-title {
+  font-size: 2rem; 
+  font-style: normal;
+  font-family: cursive;
+  color: #fff; 
+  margin-bottom: 30px; 
+}
 .city-search {
   width: 100%;
 }
@@ -38,10 +51,10 @@
   border: 2px solid rgb(204, 204, 204);
   outline: none;
   border-radius: 20px;
-  font-size: 1rem; /* Use rem for font size */
+  font-size: 1rem; 
   background-color: #e5eefe;
   padding: 6px 30px;
-  transition: width 0.4s ease-in-out; /* No need for vendor prefix */
+  transition: width 0.4s ease-in-out; 
   color: #333;
 }
 
@@ -75,7 +88,7 @@
 .des-wind {
   font-weight: 500;
   color: #e1f36d;
-  font-size: 1.375rem; /* Use rem for font size */
+  font-size: 1.375rem; 
   margin-top: 10px;
 }
 
@@ -87,7 +100,7 @@
   display: block;
   text-align: center;
   color: #e17a7a;
-  font-size: 1.5rem; /* Use rem for font size */
+  font-size: 1.5rem; 
   margin-top: auto;
 }
 
@@ -95,11 +108,11 @@
 @media (min-width: 600px) {
   .weather-app {
     width: 80%;
-    padding: 24px; /* Increase padding for larger screens */
+    padding: 24px; 
   }
 
   .city {
-    font-size: 1.25rem; /* Increase font size for larger screens */
+    font-size: 1.25rem;
     padding: 8px 40px;
   }
 
@@ -131,7 +144,7 @@
 @media (min-width: 768px) {
   .weather-app {
     width: 70%;
-    max-width: 400px; /* Adjust max width for larger screens */
+    max-width: 400px; 
     padding: 32px;
   }
 

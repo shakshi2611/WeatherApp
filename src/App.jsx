@@ -43,6 +43,8 @@ function App() {
   return (
     <div className='App'>
       <div className='weather-app'>
+        <img src='https://www.pixelstalk.net/wp-content/uploads/2016/03/Clouds-Wallpaper-Free-Download.jpg' alt='Weather Icon' className='weather-icon' />
+        <h1 className='app-title'>Weather App</h1>
         <div className='city-search'>
           <input type="text" 
           className='city' 
