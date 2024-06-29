@@ -40,10 +40,18 @@ function App() {
     }
   }
 
+  const resetWeather = () => {
+    setweather({
+      loading: false,
+      data: {},
+      error: false
+    });
+  };
+  
   return (
     <div className='App'>
       <div className='weather-app'>
-        <img src='https://www.pixelstalk.net/wp-content/uploads/2016/03/Clouds-Wallpaper-Free-Download.jpg' alt='Weather Icon' className='weather-icon' />
+        {/* <img src='https://www.pixelstalk.net/wp-content/uploads/2016/03/Clouds-Wallpaper-Free-Download.jpg' alt='Weather Icon' className='weather-icon' /> */}
         <h1 className='app-title'>Weather App</h1>
         <div className='city-search'>
           <input type="text" 
@@ -88,6 +96,7 @@ function App() {
               <p>{weather.data.weather[0].description.toUpperCase()}</p>
               <p>wind Speed: {weather.data.wind.speed}</p>
             </div>
+            <button className='reset-button' onClick={resetWeather}>Reset</button>
           </div>
           )
         }
